@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Carlos Eduardo Advocacia — Direito Imobiliário e Sucessões</title>
+<meta name="description" content="Segurança jurídica para proteger seu patrimônio e sua família. Atuação especializada em Direito Imobiliário e Sucessões em Goiânia/GO." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0A1F44;
+    --navy-deep:#05112D;
+    --dark:#2B2B2B;
+    --beige:#D6C3A3;
+    --beige-light:#F4EDE1;
+    --white:#FFFFFF;
+    --green:#1F6F5F;
+    --green-dark:#155448;
+    --muted:#5A6170;
+    --offwhite:#FAF9F5;
+    --line:rgba(214,195,163,0.25);
+    --content: 1200px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    color:var(--dark);
+    background:var(--white);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:700;letter-spacing:-0.02em;line-height:1.15;color:var(--navy)}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .container{max-width:var(--content);margin:0 auto;padding:0 24px}
+  .eyebrow{
+    display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.2em;
+    text-transform:uppercase;color:var(--green);
+    background:var(--offwhite);padding:10px 20px;border-radius:999px;
+  }
+  .eyebrow.light{color:var(--beige);background:rgba(214,195,163,0.15)}
+  .section-head{text-align:center;max-width:820px;margin:0 auto 56px}
+  .section-head h2{font-size:clamp(32px,4vw,44px);margin-top:20px}
+  .section-head p{color:var(--muted);font-size:17px;margin-top:16px;line-height:1.7}
+  .light .section-head h2{color:var(--white)}
+  .light .section-head p{color:var(--beige-light);opacity:.85}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:18px 32px;border-radius:8px;
+    font-weight:600;font-size:14px;letter-spacing:0.1em;text-transform:uppercase;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    cursor:pointer;border:none;
+  }
+  .btn-primary{background:var(--green);color:var(--white);box-shadow:0 8px 20px rgba(31,111,95,0.25)}
+  .btn-primary:hover{background:var(--green-dark);transform:translateY(-2px);box-shadow:0 12px 28px rgba(31,111,95,0.35)}
+  .btn-ghost{background:transparent;color:var(--beige);border:1px solid var(--beige)}
+  .btn-ghost:hover{background:rgba(214,195,163,0.1)}
+  .btn-lg{padding:22px 44px;font-size:15px}
+  .btn-whatsapp::before{content:"";width:16px;height:16px;background:var(--white);mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M20.52 3.48A11.94 11.94 0 0012.04 0C5.46 0 .12 5.34.12 11.92c0 2.1.55 4.15 1.6 5.96L0 24l6.3-1.66a11.94 11.94 0 005.74 1.46h.01c6.58 0 11.92-5.34 11.92-11.92 0-3.18-1.24-6.17-3.45-8.4zM12.05 21.3h-.01a9.9 9.9 0 01-5.05-1.38l-.36-.22-3.74.98 1-3.65-.23-.37a9.88 9.88 0 01-1.52-5.28c0-5.47 4.45-9.92 9.92-9.92 2.65 0 5.14 1.03 7.01 2.9a9.85 9.85 0 012.9 7.01c0 5.48-4.44 9.93-9.92 9.93zm5.45-7.43c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01s-.52.07-.8.37c-.27.3-1.05 1.02-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.11 3.23 5.12 4.53.71.31 1.27.49 1.71.63.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z'/></svg>") center/contain no-repeat;-webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M20.52 3.48A11.94 11.94 0 0012.04 0C5.46 0 .12 5.34.12 11.92c0 2.1.55 4.15 1.6 5.96L0 24l6.3-1.66a11.94 11.94 0 005.74 1.46h.01c6.58 0 11.92-5.34 11.92-11.92 0-3.18-1.24-6.17-3.45-8.4zM12.05 21.3h-.01a9.9 9.9 0 01-5.05-1.38l-.36-.22-3.74.98 1-3.65-.23-.37a9.88 9.88 0 01-1.52-5.28c0-5.47 4.45-9.92 9.92-9.92 2.65 0 5.14 1.03 7.01 2.9a9.85 9.85 0 012.9 7.01c0 5.48-4.44 9.93-9.92 9.93zm5.45-7.43c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01s-.52.07-.8.37c-.27.3-1.05 1.02-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.11 3.23 5.12 4.53.71.31 1.27.49 1.71.63.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z'/></svg>") center/contain no-repeat;}
+
+  /* ===== HERO ===== */
+  .hero{background:var(--navy);color:var(--white);padding:32px 0 120px}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:40px;padding:0 24px;max-width:var(--content);margin:0 auto 80px}
+  .logo{display:flex;flex-direction:column;gap:2px}
+  .logo .name{font-family:'Playfair Display',serif;font-weight:700;font-size:18px;letter-spacing:0.08em;color:var(--beige)}
+  .logo .sub{font-size:10px;letter-spacing:0.3em;font-weight:500;color:var(--white)}
+  .nav-links{display:flex;gap:36px}
+  .nav-links a{font-size:14px;font-weight:500;letter-spacing:0.02em;color:rgba(255,255,255,.85)}
+  .nav-links a:hover{color:var(--beige)}
+  .nav .btn{padding:14px 22px;font-size:12px}
+
+  .hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:center;padding:0 24px;max-width:var(--content);margin:0 auto}
+  .hero h1{color:var(--white);font-size:clamp(40px,5vw,60px);line-height:1.1;margin:24px 0}
+  .hero .sub{color:var(--beige-light);font-size:18px;line-height:1.65;opacity:.85;max-width:540px}
+  .cta-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:32px}
+  .badges{display:flex;gap:28px;flex-wrap:wrap;margin-top:32px}
+  .badge{display:flex;align-items:center;gap:10px;font-size:12px;letter-spacing:0.1em;color:var(--beige-light);text-transform:uppercase;font-weight:500}
+  .badge::before{content:"";width:6px;height:6px;background:var(--beige);border-radius:50%}
+
+  .hero-card{
+    aspect-ratio: 520/620;
+    border-radius:12px;overflow:hidden;
+    background:
+      linear-gradient(180deg, rgba(10,31,68,0.15) 0%, rgba(10,31,68,0.0) 30%, rgba(10,31,68,0.75) 100%),
+      url("assets/carlos-eduardo.jpg") center 20%/cover no-repeat,
+      var(--navy);
+    display:flex;align-items:flex-end;padding:32px;
+    position:relative;
+    box-shadow:0 30px 60px rgba(0,0,0,0.35);
+  }
+  .hero-card::before{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,transparent 45%,rgba(10,31,68,0.7) 100%);
+    pointer-events:none;
+  }
+  .hero-card-label{position:relative;z-index:1}
+  .hero-card-label .name{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--white)}
+  .hero-card-label .role{font-size:12px;letter-spacing:0.3em;color:var(--beige);margin-top:6px;text-transform:uppercase;font-weight:500}
+
+  /* ===== SOBRE ===== */
+  .sobre{padding:120px 0;background:var(--white)}
+  .sobre-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:center}
+  .sobre-img{
+    aspect-ratio: 500/600;border-radius:12px;
+    background:
+      linear-gradient(180deg, rgba(10,31,68,0.0) 40%, rgba(10,31,68,0.35) 100%),
+      url("assets/carlos-eduardo.jpg") 30% 15%/cover no-repeat,
+      var(--beige);
+    position:relative;overflow:hidden;
+    box-shadow:0 30px 60px rgba(10,31,68,0.15);
+  }
+  .badge-exp{
+    position:absolute;bottom:28px;left:28px;display:flex;align-items:stretch;gap:0;
+    background:var(--navy);border-radius:10px;overflow:hidden;
+    box-shadow:0 12px 30px rgba(10,31,68,0.35);
+  }
+  .badge-exp .num{
+    font-family:'Playfair Display',serif;font-weight:700;font-size:44px;
+    color:var(--beige);padding:16px 20px 12px;line-height:1;
+  }
+  .badge-exp .label{
+    display:flex;align-items:center;padding:0 20px;
+    font-size:10px;letter-spacing:0.2em;font-weight:600;color:var(--white);
+    text-transform:uppercase;border-left:1px solid rgba(214,195,163,0.3);
+    max-width:140px;line-height:1.4;
+  }
+  .sobre h2{font-size:clamp(28px,3.2vw,42px);margin-top:20px}
+  .sobre p{color:var(--muted);font-size:16px;line-height:1.75;margin-top:20px}
+  .stats{display:flex;gap:48px;margin-top:32px;flex-wrap:wrap}
+  .stat .n{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--green)}
+  .stat .l{font-size:12px;letter-spacing:0.15em;color:var(--muted);text-transform:uppercase;font-weight:500;margin-top:4px}
+
+  /* ===== ÁREAS ===== */
+  .areas{padding:120px 0;background:var(--offwhite)}
+  .area-cards{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+  .area-card{
+    background:var(--white);border:1px solid var(--line);
+    border-radius:16px;padding:48px 40px;
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .area-card:hover{transform:translateY(-4px);box-shadow:0 24px 48px rgba(10,31,68,0.08)}
+  .icon-square{
+    width:56px;height:56px;border-radius:12px;background:var(--navy);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--beige);font-family:'Playfair Display',serif;font-size:28px;font-weight:700;
+  }
+  .area-card h3{font-size:28px;margin-top:24px}
+  .area-card .lead{color:var(--muted);font-size:14px;line-height:1.7;margin-top:12px}
+  .area-card .divider{width:60px;height:2px;background:var(--beige);margin:24px 0}
+  .area-card ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+  .area-card li{display:flex;align-items:center;gap:14px;font-size:15px;color:var(--dark);font-weight:500}
+  .area-card li::before{content:"";width:8px;height:8px;background:var(--green);border-radius:50%;flex-shrink:0}
+  .center-cta{text-align:center;margin-top:48px}
+
+  /* ===== PROBLEMAS ===== */
+  .problemas{padding:120px 0;background:var(--navy);color:var(--white)}
+  .problemas .section-head{max-width:760px}
+  .problem-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .problem-card{
+    background:rgba(255,255,255,0.05);border:1px solid rgba(214,195,163,0.25);
+    padding:32px 28px;border-radius:12px;
+  }
+  .problem-card .icon-alert{
+    width:44px;height:44px;border-radius:8px;background:var(--green);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--white);font-family:'Playfair Display',serif;font-weight:700;font-size:22px;
+  }
+  .problem-card h4{font-family:'Playfair Display',serif;font-size:20px;color:var(--white);margin-top:18px;line-height:1.3}
+  .problem-card p{color:var(--beige-light);opacity:.75;font-size:14px;line-height:1.65;margin-top:14px}
+
+  /* ===== DIFERENCIAIS ===== */
+  .diferenciais{padding:120px 0;background:var(--white)}
+  .diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .diff-card{background:var(--offwhite);border-radius:16px;padding:40px 32px}
+  .diff-card .icon-square{font-size:22px}
+  .diff-card h4{font-family:'Playfair Display',serif;color:var(--navy);font-size:20px;margin-top:20px;line-height:1.3}
+  .diff-card p{color:var(--muted);font-size:14px;line-height:1.7;margin-top:14px}
+  .diff-card.dark{background:var(--navy)}
+  .diff-card.dark h4{color:var(--white)}
+  .diff-card.dark p{color:var(--beige-light);opacity:.85}
+
+  /* ===== COMO FUNCIONA ===== */
+  .como{padding:120px 0;background:var(--offwhite)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .step{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:40px 32px}
+  .step .num{font-family:'Playfair Display',serif;font-weight:700;font-size:48px;color:var(--beige);letter-spacing:-0.03em}
+  .step h4{font-family:'Playfair Display',serif;color:var(--navy);font-size:20px;margin-top:16px;line-height:1.3}
+  .step p{color:var(--muted);font-size:14px;line-height:1.7;margin-top:14px}
+
+  /* ===== PROVA SOCIAL ===== */
+  .prova{padding:120px 0;background:var(--white)}
+  .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .testi{background:var(--offwhite);border-radius:16px;padding:40px 32px;display:flex;flex-direction:column;gap:20px}
+  .testi .quote{font-family:'Playfair Display',serif;font-weight:700;font-size:72px;color:var(--beige);line-height:1;height:40px}
+  .testi .text{font-size:16px;color:var(--dark);line-height:1.75}
+  .testi .stars{color:var(--green);letter-spacing:4px;font-size:16px}
+  .testi .person{display:flex;align-items:center;gap:14px;margin-top:4px}
+  .testi .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--green));flex-shrink:0}
+  .testi .name{font-weight:600;font-size:15px;color:var(--navy)}
+  .testi .role{font-size:12px;color:var(--muted);margin-top:2px}
+
+  /* ===== CTA FINAL ===== */
+  .cta-final{
+    padding:140px 0;background:var(--navy-deep);color:var(--white);text-align:center;
+    position:relative;overflow:hidden;
+  }
+  .cta-final::before{
+    content:"";position:absolute;inset:0;opacity:.08;
+    background:radial-gradient(circle at 50% 50%,var(--beige) 0,transparent 60%);
+  }
+  .cta-final .container{position:relative}
+  .cta-final h2{color:var(--white);font-size:clamp(36px,5vw,56px);margin:24px auto;max-width:800px}
+  .cta-final p{color:var(--beige-light);opacity:.85;font-size:18px;max-width:640px;margin:0 auto;line-height:1.7}
+  .cta-final .btn-primary{margin-top:36px}
+  .trust-line{display:flex;gap:32px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+  .trust-line .badge{color:var(--beige-light);opacity:.85}
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--navy);color:var(--white);padding:80px 0 40px}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1.1fr 1fr;gap:48px}
+  .footer-col h5{font-size:11px;letter-spacing:0.2em;color:var(--beige);text-transform:uppercase;font-weight:600;margin-bottom:20px}
+  .footer-col p, .footer-col a{font-size:14px;color:var(--white);line-height:1.75;display:block}
+  .footer-col a:hover{color:var(--beige)}
+  .footer-col .tagline{font-family:'Playfair Display',serif;font-size:15px;color:var(--beige-light);opacity:.8;margin-top:20px;line-height:1.6}
+  .footer-divider{height:1px;background:rgba(214,195,163,0.2);margin:48px 0 24px}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+  .footer-bottom p, .footer-bottom a{font-size:12px;color:var(--beige-light);opacity:.6}
+  .legal{display:flex;gap:24px}
+
+  /* Floating WhatsApp */
+  .fab{
+    position:fixed;bottom:24px;right:24px;z-index:50;
+    width:60px;height:60px;border-radius:50%;
+    background:#25D366;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 12px 30px rgba(37,211,102,0.4);
+    transition:transform .2s ease;
+  }
+  .fab:hover{transform:scale(1.08)}
+  .fab svg{width:30px;height:30px;fill:#fff}
+
+  /* Responsive */
+  @media (max-width: 960px){
+    .hero-grid,.sobre-grid{grid-template-columns:1fr;gap:48px}
+    .area-cards{grid-template-columns:1fr}
+    .problem-grid,.steps{grid-template-columns:repeat(2,1fr)}
+    .diff-grid,.testimonials{grid-template-columns:1fr}
+    .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
+    .nav-links{display:none}
+    .hero,.sobre,.areas,.problemas,.diferenciais,.como,.prova,.cta-final{padding:80px 0}
+  }
+  @media (max-width: 560px){
+    .problem-grid,.steps,.footer-grid{grid-template-columns:1fr}
+    .cta-row{flex-direction:column;align-items:stretch}
+    .btn{justify-content:center}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== 1. HERO ===== -->
+<section class="hero">
+  <nav class="nav">
+    <div class="logo">
+      <span class="name">CARLOS EDUARDO</span>
+      <span class="sub">ADVOCACIA</span>
+    </div>
+    <div class="nav-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#areas">Áreas de Atuação</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <a class="btn btn-primary" href="https://wa.me/5562946130003" target="_blank" rel="noopener">WhatsApp</a>
+  </nav>
+
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow light">Especialista em Patrimônio</span>
+      <h1>Segurança jurídica para proteger seu patrimônio e sua família.</h1>
+      <p class="sub">Atuação especializada em Direito Imobiliário e Sucessões, com soluções seguras e estratégicas para famílias e investidores que valorizam tranquilidade.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://wa.me/5562946130003" target="_blank" rel="noopener">Falar com advogado no WhatsApp</a>
+        <a class="btn btn-ghost" href="#sobre">Conhecer o escritório</a>
+      </div>
+      <div class="badges">
+        <span class="badge">OAB/GO 32.419</span>
+        <span class="badge">+10 anos de atuação</span>
+        <span class="badge">Atendimento personalizado</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-label">
+        <div class="name">Dr. Carlos Eduardo</div>
+        <div class="role">Advogado — OAB/GO 32.419</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 2. SOBRE ===== -->
+<section class="sobre" id="sobre">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-img" aria-hidden="true">
+        <div class="badge-exp">
+          <div class="num">10+</div>
+          <div class="label">Anos de Experiência</div>
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow">Sobre o escritório</span>
+        <h2>Referência em planejamento patrimonial e regularização imobiliária.</h2>
+        <p>O Carlos Eduardo Advocacia é um escritório dedicado a proteger o que há de mais valioso para nossos clientes: o patrimônio familiar e a segurança jurídica das próximas gerações. Atuamos com foco em Direito Imobiliário e Direito das Sucessões, oferecendo soluções estratégicas, personalizadas e seguras.</p>
+        <p>Combinamos experiência técnica, leitura estratégica do caso e uma comunicação clara para que cada cliente tome decisões informadas e seguras — sem surpresas, sem dúvidas, sem desgastes familiares.</p>
+        <div class="stats">
+          <div class="stat"><div class="n">+10</div><div class="l">anos de atuação</div></div>
+          <div class="stat"><div class="n">+500</div><div class="l">casos atendidos</div></div>
+          <div class="stat"><div class="n">100%</div><div class="l">atendimento personalizado</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. ÁREAS DE ATUAÇÃO ===== -->
+<section class="areas" id="areas">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Áreas de Atuação</span>
+      <h2>Soluções jurídicas completas para proteger seu patrimônio</h2>
+      <p>Atuação especializada em duas frentes estratégicas para famílias e investidores.</p>
+    </div>
+    <div class="area-cards">
+      <article class="area-card">
+        <div class="icon-square">⌂</div>
+        <h3>Direito Imobiliário</h3>
+        <p class="lead">Segurança e estratégia em todas as etapas da sua relação com o imóvel.</p>
+        <div class="divider"></div>
+        <ul>
+          <li>Regularização de imóveis</li>
+          <li>Escritura e registro</li>
+          <li>Compra e venda com segurança jurídica</li>
+          <li>Usucapião</li>
+          <li>Análise de riscos imobiliários</li>
+        </ul>
+      </article>
+      <article class="area-card">
+        <div class="icon-square">§</div>
+        <h3>Direito das Sucessões</h3>
+        <p class="lead">Planejamento sucessório e proteção do patrimônio da sua família.</p>
+        <div class="divider"></div>
+        <ul>
+          <li>Inventário judicial e extrajudicial</li>
+          <li>Planejamento sucessório</li>
+          <li>Testamentos</li>
+          <li>Partilha de bens</li>
+          <li>Organização patrimonial familiar</li>
+        </ul>
+      </article>
+    </div>
+    <div class="center-cta">
+      <a class="btn btn-primary" href="https://wa.me/5562946130003" target="_blank" rel="noopener">Quero analisar meu caso</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. PROBLEMAS ===== -->
+<section class="problemas light">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow light">Atenção</span>
+      <h2>Você pode estar correndo riscos sem perceber</h2>
+      <p>Pequenos descuidos hoje podem gerar prejuízos enormes amanhã. A maioria dos conflitos patrimoniais começa com decisões tomadas sem o acompanhamento certo.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="icon-alert">!</div>
+        <h4>Imóveis irregulares</h4>
+        <p>Documentação pendente pode travar vendas, financiamentos e gerar multas.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon-alert">!</div>
+        <h4>Falta de planejamento sucessório</h4>
+        <p>Sem planejamento, a sucessão vira disputa, custo elevado e anos de processo.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon-alert">!</div>
+        <h4>Conflitos familiares futuros</h4>
+        <p>Divisões mal conduzidas destroem relações e dilapidam patrimônio.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon-alert">!</div>
+        <h4>Perda de patrimônio</h4>
+        <p>Decisões sem estratégia corroem o que levou anos para ser conquistado.</p>
+      </div>
+    </div>
+    <div class="center-cta">
+      <a class="btn btn-primary" href="https://wa.me/5562946130003" target="_blank" rel="noopener">Evite problemas — fale com um advogado</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. DIFERENCIAIS ===== -->
+<section class="diferenciais" id="diferenciais">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Diferenciais</span>
+      <h2>Por que famílias e investidores escolhem nosso escritório</h2>
+    </div>
+    <div class="diff-grid">
+      <div class="diff-card">
+        <div class="icon-square">◆</div>
+        <h4>Atendimento direto com advogado</h4>
+        <p>Você fala diretamente com quem conduz seu caso, sem intermediários.</p>
+      </div>
+      <div class="diff-card">
+        <div class="icon-square">◆</div>
+        <h4>Análise estratégica personalizada</h4>
+        <p>Cada caso é único. Construímos a estratégia sob medida para o seu objetivo.</p>
+      </div>
+      <div class="diff-card">
+        <div class="icon-square">◆</div>
+        <h4>Foco em prevenção de conflitos</h4>
+        <p>Antecipamos riscos e evitamos disputas antes que elas apareçam.</p>
+      </div>
+      <div class="diff-card">
+        <div class="icon-square">◆</div>
+        <h4>Transparência e clareza jurídica</h4>
+        <p>Explicamos cada etapa em linguagem simples, sem jargões técnicos.</p>
+      </div>
+      <div class="diff-card">
+        <div class="icon-square">◆</div>
+        <h4>Atuação ágil e segura</h4>
+        <p>Prazos respeitados, respostas rápidas e decisões fundamentadas.</p>
+      </div>
+      <div class="diff-card dark">
+        <h4>Autoridade + cuidado humano.</h4>
+        <p>Tecnicidade jurídica aliada ao cuidado com sua família. Essa é nossa diferença.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6. COMO FUNCIONA ===== -->
+<section class="como">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Um processo simples, claro e estratégico</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">01</div>
+        <h4>Contato inicial via WhatsApp</h4>
+        <p>Você envia uma mensagem e recebe um retorno rápido e direto com o advogado.</p>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <h4>Análise do caso</h4>
+        <p>Avaliamos documentos, riscos e oportunidades de forma completa e sigilosa.</p>
+      </div>
+      <div class="step">
+        <div class="num">03</div>
+        <h4>Definição da estratégia jurídica</h4>
+        <p>Apresentamos o melhor caminho com clareza, prazos e expectativas realistas.</p>
+      </div>
+      <div class="step">
+        <div class="num">04</div>
+        <h4>Acompanhamento completo</h4>
+        <p>Conduzimos cada etapa com transparência até a resolução total do caso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. PROVA SOCIAL ===== -->
+<section class="prova">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">O que dizem os clientes</span>
+      <h2>Histórias reais de quem escolheu proteger seu patrimônio</h2>
+    </div>
+    <div class="testimonials">
+      <div class="testi">
+        <div class="quote">“</div>
+        <p class="text">Resolvi toda a documentação do meu imóvel com segurança. O escritório conduziu tudo de forma clara, rápida e sem surpresas.</p>
+        <div class="stars">★★★★★</div>
+        <div class="person">
+          <div class="avatar"></div>
+          <div>
+            <div class="name">Mariana Ribeiro</div>
+            <div class="role">Cliente — Regularização Imobiliária</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi">
+        <div class="quote">“</div>
+        <p class="text">Evitei problemas familiares com um planejamento bem feito. Hoje minha família está protegida e todos sabem o que fazer.</p>
+        <div class="stars">★★★★★</div>
+        <div class="person">
+          <div class="avatar"></div>
+          <div>
+            <div class="name">Ricardo Almeida</div>
+            <div class="role">Cliente — Planejamento Sucessório</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi">
+        <div class="quote">“</div>
+        <p class="text">Atendimento excelente, direto com o advogado. Me senti acompanhado em cada etapa do inventário.</p>
+        <div class="stars">★★★★★</div>
+        <div class="person">
+          <div class="avatar"></div>
+          <div>
+            <div class="name">Fernanda Costa</div>
+            <div class="role">Cliente — Inventário Extrajudicial</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. CTA FINAL ===== -->
+<section class="cta-final">
+  <div class="container">
+    <span class="eyebrow light">Não deixe para depois</span>
+    <h2>Proteja seu patrimônio antes que seja tarde.</h2>
+    <p>Uma conversa de 15 minutos com um especialista pode evitar anos de problemas. Fale com a gente hoje pelo WhatsApp.</p>
+    <a class="btn btn-primary btn-lg" href="https://wa.me/5562946130003" target="_blank" rel="noopener">Falar com advogado agora</a>
+    <div class="trust-line">
+      <span class="badge">Atendimento sigiloso</span>
+      <span class="badge">Resposta em até 24h</span>
+      <span class="badge">Primeira conversa sem compromisso</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9. FOOTER ===== -->
+<footer id="contato">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo">
+          <span class="name" style="font-size:22px">CARLOS EDUARDO</span>
+          <span class="sub" style="font-size:11px">ADVOCACIA</span>
+        </div>
+        <p class="tagline">Atuação jurídica com responsabilidade e estratégia.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <a href="https://wa.me/5562946130003" target="_blank" rel="noopener">WhatsApp: (62) 9461-3003</a>
+        <a href="mailto:advoclique@gmail.com">advoclique@gmail.com</a>
+      </div>
+      <div class="footer-col">
+        <h5>Endereço</h5>
+        <p>R. João de Abreu, 116 — sala 1401-A<br>Ed. Euro Working<br>St. Oeste, Goiânia – GO<br>CEP: 74120-110</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navegação</h5>
+        <a href="#sobre">Sobre</a>
+        <a href="#areas">Áreas de Atuação</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#contato">Contato</a>
+        <a href="#" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <p>© 2026 Carlos Eduardo Advocacia. Todos os direitos reservados.</p>
+      <div class="legal">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="fab" href="https://wa.me/5562946130003" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.94 11.94 0 0012.04 0C5.46 0 .12 5.34.12 11.92c0 2.1.55 4.15 1.6 5.96L0 24l6.3-1.66a11.94 11.94 0 005.74 1.46h.01c6.58 0 11.92-5.34 11.92-11.92 0-3.18-1.24-6.17-3.45-8.4zM17.5 13.87c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01s-.52.07-.8.37c-.27.3-1.05 1.02-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.11 3.23 5.12 4.53.71.31 1.27.49 1.71.63.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/></svg>
+</a>
+
+</body>
+</html>
